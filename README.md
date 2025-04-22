@@ -21,10 +21,11 @@ Questions? <amy.romanello@nothingtwoserious.art>
 
 Included in this repo is a viewer to view the current regions, and turn them on and off. The current parcelation is viewable [here](./hack/bn_246_table.md)
 
-Run `simulator.py` to generate the web files, then use a simple webserver to view the [result on localhost](http://localhost:8000/web/brain_regions_3d.html)
+Run `simulator.py` to generate the web files, then use a simple webserver to view the [result on localhost](http://localhost:8000/)
+
 ```bash
 python scripts/simulator.py
-python -m http.server 8000
+uv run fastapi dev src/api_server/main.py
 ```
 
 ## Features

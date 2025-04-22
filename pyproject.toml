@@ -21,6 +21,7 @@ dependencies = [
     "dash>=3.0.3",
     "distlib==0.3.9",
     "docutils==0.21.2",
+    "fastapi[standard]>=0.115.12",
     "filelock==3.18.0",
     "fonttools==4.57.0",
     "fuzzywuzzy==0.18.0",
