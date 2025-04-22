@@ -8,7 +8,8 @@ Amy Romanello and Zach Dunton
 This project was conceptualized by:
 Stephan Krohn
 
-# Project structure
+Project structure
+--------
 
 Light-minded can be thought of as a set of modules, or components, currently being developed by individual team members. 
 As of April 2025, work on the sculpture design and LED infrastructure is driven by Zach Dunton. 
@@ -16,5 +17,20 @@ Fullstack software development, including integration with NiMARE tools and neur
 Stephan Krohn provides ongoing consultations on design and functionality. 
 
 Questions? <amy.romanello@nothingtwoserious.art>
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+* Free software: MIT license
+* Documentation: Coming soon...
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+
+
 
 
