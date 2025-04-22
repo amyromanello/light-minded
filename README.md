@@ -8,8 +8,13 @@ Amy Romanello and Zach Dunton
 This project was conceptualized by:
 Stephan Krohn
 
-# Components
+# Project structure
 
 Light-minded can be thought of as a set of modules, or components, currently being developed by individual team members. 
-As of April 2025, work on the sculpture design and LED infrastructure is driven by Zach Dunton. Fullstack software development, including integration with NiMARE tools and neuroimaging datasets, is carried out by Amy Romanello. 
+As of April 2025, work on the sculpture design and LED infrastructure is driven by Zach Dunton. 
+Fullstack software development, including integration with NiMARE tools and neuroimaging datasets, is carried out by Amy Romanello. 
+Stephan Krohn provides ongoing consultations on design and functionality. 
+
+Questions? <amy.romanello@nothingtwoserious.art>
+
 
