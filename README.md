@@ -8,8 +8,7 @@ Amy Romanello and Zach Dunton
 This project was conceptualized by:
 Stephan Krohn
 
-Project structure
---------
+## Project structure
 
 Light-minded can be thought of as a set of modules, or components, currently being developed by individual team members. 
 As of April 2025, work on the sculpture design and LED infrastructure is driven by Zach Dunton. 
@@ -18,18 +17,23 @@ Stephan Krohn provides ongoing consultations on design and functionality.
 
 Questions? <amy.romanello@nothingtwoserious.art>
 
+## Viewing the Regions in the Atlas
 
-Features
---------
+Included in this repo is a viewer to view the current regions, and turn them on and off.
+
+Run `simulator.py` to generate the web files, then use a simple webserver to view the [result on localhost](http://localhost:8000/web/brain_regions_3d.html)
+```bash
+python scripts/simulator.py
+python -m http.server 8000
+```
+
+## Features
 
 * TODO
 
-Credits
--------
-* Free software: MIT license
-* Documentation: Coming soon...
+## Credits
 
-This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+* Free software: MIT license
 
 
 
