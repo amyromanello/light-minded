@@ -1,0 +1,6 @@
+{
+    "analysis_type": "CBMA",
+    "dataset": "neurosynth",
+    "atlas": "MNI152",
+    "keyword": "emotion"
+}
