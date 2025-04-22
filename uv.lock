@@ -639,6 +639,7 @@ dependencies = [
     { name = "nimare" },
     { name = "numba" },
     { name = "numpy" },
+    { name = "numpy-stl" },
     { name = "packaging" },
     { name = "pandas" },
     { name = "patsy" },
@@ -676,7 +677,6 @@ dependencies = [
     { name = "sphinxcontrib-qthelp" },
     { name = "sphinxcontrib-serializinghtml" },
     { name = "statsmodels" },
-    { name = "stl" },
     { name = "sympy" },
     { name = "threadpoolctl" },
     { name = "tox" },
@@ -753,6 +753,7 @@ requires-dist = [
     { name = "nimare", specifier = "==0.4.2" },
     { name = "numba", specifier = "==0.61.2" },
     { name = "numpy", specifier = "==1.26.4" },
+    { name = "numpy-stl", specifier = ">=3.2.0" },
     { name = "packaging", specifier = "==25.0" },
     { name = "pandas", specifier = "==2.2.3" },
     { name = "patsy", specifier = "==1.0.1" },
@@ -790,7 +791,6 @@ requires-dist = [
     { name = "sphinxcontrib-qthelp", specifier = "==2.0.0" },
     { name = "sphinxcontrib-serializinghtml", specifier = "==2.0.0" },
     { name = "statsmodels", specifier = "==0.14.4" },
-    { name = "stl", specifier = ">=0.0.3" },
     { name = "sympy", specifier = "==1.13.3" },
     { name = "threadpoolctl", specifier = "==3.6.0" },
     { name = "tox", specifier = "==4.10.0" },
@@ -1218,6 +1218,19 @@ wheels = [
 ]
 
 [[package]]
+name = "numpy-stl"
+version = "3.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "python-utils" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cb/80/96366d1b69223d4ca55fca30f158096df169b00aa6b4dd963025980e7ede/numpy_stl-3.2.0.tar.gz", hash = "sha256:5a20c3f79cddaa0abc6a4b99f5486aceed4f88152f29b19a57acc844e183fd4d", size = 824382, upload_time = "2024-11-25T17:15:43.227Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ea/2c/e17b8814050427929077639d35a42187a006922600d4840475bdc5f64ebb/numpy_stl-3.2.0-py3-none-any.whl", hash = "sha256:697c81b107231362460aaedf4647e81ba54f54f59c896772fea7904c9c439da5", size = 20775, upload_time = "2024-11-25T17:15:41.346Z" },
+]
+
+[[package]]
 name = "packaging"
 version = "25.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1467,6 +1480,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432, upload_time = "2024-03-01T18:36:20.211Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892, upload_time = "2024-03-01T18:36:18.57Z" },
+]
+
+[[package]]
+name = "python-utils"
+version = "3.9.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/13/4c/ef8b7b1046d65c1f18ca31e5235c7d6627ca2b3f389ab1d44a74d22f5cc9/python_utils-3.9.1.tar.gz", hash = "sha256:eb574b4292415eb230f094cbf50ab5ef36e3579b8f09e9f2ba74af70891449a0", size = 35403, upload_time = "2024-11-26T00:38:58.736Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d4/69/31c82567719b34d8f6b41077732589104883771d182a9f4ff3e71430999a/python_utils-3.9.1-py2.py3-none-any.whl", hash = "sha256:0273d7363c7ad4b70999b2791d5ba6b55333d6f7a4e4c8b6b39fb82b5fab4613", size = 32078, upload_time = "2024-11-26T00:38:57.488Z" },
 ]
 
 [[package]]
@@ -1924,12 +1949,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/4f/76/67747e49dc758daae06f33aad8247b718cd7d224f091d2cd552681215bb2/statsmodels-0.14.4-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:e31b95ac603415887c9f0d344cb523889cf779bc52d68e27e2d23c358958fec7", size = 10859503, upload_time = "2024-10-03T17:14:32.798Z" },
     { url = "https://files.pythonhosted.org/packages/1d/eb/cb8b01f5edf8f135eb3d0553d159db113a35b2948d0e51eeb735e7ae09ea/statsmodels-0.14.4-cp313-cp313-win_amd64.whl", hash = "sha256:81030108d27aecc7995cac05aa280cf8c6025f6a6119894eef648997936c2dd0", size = 9817574, upload_time = "2024-10-03T16:14:37.461Z" },
 ]
-
-[[package]]
-name = "stl"
-version = "0.0.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/aa/91/4bdb12160348109179158d34e6eda6279166302ec0224d6edc8324f344df/stl-0.0.3.tar.gz", hash = "sha256:03a6b58ad52ecf16823b1cf1acf6ef382aa5c0fc1152379f464e284a4f81304b", size = 4230, upload_time = "2015-07-13T17:31:23.736Z" }
 
 [[package]]
 name = "sympy"
