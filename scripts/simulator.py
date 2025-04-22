@@ -13,7 +13,7 @@ file_path = "hack/BN_Atlas_246_1mm.nii.gz"
 table_path = "hack/bn_246_table.md"
 
 # Create output directory for the WebGL data
-os.makedirs("webgl_output", exist_ok=True)
+os.makedirs("web/webgl_output", exist_ok=True)
 
 
 # Parse the bn_246_table.md file to extract metadata
@@ -133,7 +133,7 @@ for idx, i in enumerate(unique_vals):
             )
 
         # Save individual mesh data to a JSON file
-        with open(f"webgl_output/mesh_{int(i)}.json", "w") as f:
+        with open(f"web/webgl_output/mesh_{int(i)}.json", "w") as f:
             json.dump(mesh_data, f)
 
         # Add to the collection of all meshes
@@ -145,7 +145,7 @@ for idx, i in enumerate(unique_vals):
         print(f"  Error processing value {int(i)}: {e}")
 
 # Save the index file with references to all meshes
-with open("webgl_output/mesh_index.json", "w") as f:
+with open("web/webgl_output/mesh_index.json", "w") as f:
     json.dump({"meshes": all_meshes}, f)
 
 print(f"Processed {len(all_meshes)} meshes")
@@ -186,6 +186,77 @@ html_content = """<!DOCTYPE html>
             background-color: rgba(0,0,0,0.5);
             padding: 10px;
             border-radius: 5px;
+        }
+        #region-list-panel {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 5px;
+            width: 300px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        #region-list-panel h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+        }
+        #grouping-controls {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        #grouping-controls label {
+            margin-right: 10px;
+        }
+        #region-list {
+            max-height: 60vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .region-group {
+            margin-bottom: 10px;
+        }
+        .group-header {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .group-header:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        .group-toggle {
+            margin-right: 5px;
+        }
+        .region-item {
+            padding: 3px 5px 3px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .region-item:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 3px;
+        }
+        .region-color {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .region-checkbox {
+            margin-right: 8px;
         }
         #region-info {
             position: absolute;
@@ -240,6 +311,26 @@ html_content = """<!DOCTYPE html>
         </div>
     </div>
     
+    <div id="region-list-panel">
+        <h3>Region List</h3>
+        <div id="grouping-controls">
+            <div>Group by:</div>
+            <div>
+                <input type="radio" id="group-by-lobe" name="grouping" value="lobe" checked>
+                <label for="group-by-lobe">Lobe</label>
+                
+                <input type="radio" id="group-by-gyrus" name="grouping" value="gyrus">
+                <label for="group-by-gyrus">Gyrus</label>
+                
+                <input type="radio" id="group-by-network" name="grouping" value="network">
+                <label for="group-by-network">Network</label>
+            </div>
+        </div>
+        <div id="region-list">
+            <!-- Region groups will be populated here -->
+        </div>
+    </div>
+    
     <div id="region-info">
         <h3>Region Information <span id="color-indicator"></span></h3>
         <table>
@@ -288,8 +379,146 @@ html_content = """<!DOCTYPE html>
         let loadedCount = 0;
         let totalCount = 0;
         
+        // Region visibility management
+        const regionVisibility = new Map(); // Maps region ID to visibility state
+        
+        // Function to toggle region visibility
+        function toggleRegionVisibility(regionId, visible) {
+            regionVisibility.set(regionId, visible);
+            
+            // Find the mesh with this ID and update its visibility
+            const mesh = meshes.find(m => m.userData.id === regionId);
+            if (mesh) {
+                mesh.visible = visible;
+            }
+        }
+        
+        // Function to toggle all regions in a group
+        function toggleGroupVisibility(groupName, groupValue, visible) {
+            // Find all meshes in this group and update their visibility
+            meshes.forEach(mesh => {
+                if (mesh.userData[groupName] === groupValue) {
+                    mesh.visible = visible;
+                    regionVisibility.set(mesh.userData.id, visible);
+                    
+                    // Update checkboxes in the UI
+                    const checkbox = document.getElementById(`region-${mesh.userData.id}`);
+                    if (checkbox) {
+                        checkbox.checked = visible;
+                    }
+                }
+            });
+        }
+        
+        // Function to populate the region list based on grouping
+        function populateRegionList(groupBy) {
+            const regionList = document.getElementById('region-list');
+            regionList.innerHTML = ''; // Clear existing content
+            
+            // Group meshes by the selected property
+            const groups = {};
+            
+            meshes.forEach(mesh => {
+                if (!mesh.userData[groupBy]) return;
+                
+                const groupValue = mesh.userData[groupBy];
+                if (!groups[groupValue]) {
+                    groups[groupValue] = [];
+                }
+                groups[groupValue].push(mesh);
+            });
+            
+            // Sort group names alphabetically
+            const sortedGroupNames = Object.keys(groups).sort();
+            
+            // Create HTML for each group
+            sortedGroupNames.forEach(groupName => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'region-group';
+                
+                // Create group header
+                const headerDiv = document.createElement('div');
+                headerDiv.className = 'group-header';
+                
+                // Create group checkbox
+                const groupCheckbox = document.createElement('input');
+                groupCheckbox.type = 'checkbox';
+                groupCheckbox.className = 'group-toggle';
+                groupCheckbox.checked = true; // Default to visible
+                groupCheckbox.addEventListener('change', function() {
+                    toggleGroupVisibility(groupBy, groupName, this.checked);
+                });
+                
+                // Create group label
+                const groupLabel = document.createElement('span');
+                groupLabel.textContent = `${groupName} (${groups[groupName].length})`;
+                
+                headerDiv.appendChild(groupCheckbox);
+                headerDiv.appendChild(groupLabel);
+                
+                // Make the header clickable to expand/collapse
+                const groupItems = document.createElement('div');
+                groupItems.className = 'group-items';
+                groupItems.style.display = 'none'; // Start collapsed
+                
+                headerDiv.addEventListener('click', function(e) {
+                    // Don't toggle when clicking the checkbox
+                    if (e.target !== groupCheckbox) {
+                        groupItems.style.display = groupItems.style.display === 'none' ? 'block' : 'none';
+                    }
+                });
+                
+                // Add region items
+                groups[groupName].sort((a, b) => a.userData.id - b.userData.id).forEach(mesh => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'region-item';
+                    
+                    // Create region checkbox
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'region-checkbox';
+                    checkbox.id = `region-${mesh.userData.id}`;
+                    checkbox.checked = regionVisibility.get(mesh.userData.id) !== false; // Default to visible
+                    checkbox.addEventListener('change', function() {
+                        toggleRegionVisibility(mesh.userData.id, this.checked);
+                    });
+                    
+                    // Create color indicator
+                    const colorSpan = document.createElement('span');
+                    colorSpan.className = 'region-color';
+                    colorSpan.style.backgroundColor = mesh.material.color.getStyle();
+                    
+                    // Create region label
+                    const label = document.createElement('span');
+                    label.textContent = `${mesh.userData.hemisphere_name} (${mesh.userData.id})`;
+                    
+                    itemDiv.appendChild(checkbox);
+                    itemDiv.appendChild(colorSpan);
+                    itemDiv.appendChild(label);
+                    groupItems.appendChild(itemDiv);
+                });
+                
+                groupDiv.appendChild(headerDiv);
+                groupDiv.appendChild(groupItems);
+                regionList.appendChild(groupDiv);
+            });
+        }
+        
+        // Event listeners for grouping radio buttons
+        document.getElementById('group-by-lobe').addEventListener('change', function() {
+            if (this.checked) populateRegionList('lobe');
+        });
+        
+        document.getElementById('group-by-gyrus').addEventListener('change', function() {
+            if (this.checked) populateRegionList('gyrus');
+        });
+        
+        document.getElementById('group-by-network').addEventListener('change', function() {
+            if (this.checked) populateRegionList('network');
+        });
+        
         // Load the index file
-        fetch('webgl_output/mesh_index.json')
+        fetch('./webgl_output/mesh_index.json')
             .then(response => response.json())
             .then(data => {
                 totalCount = data.meshes.length;
@@ -376,6 +605,9 @@ html_content = """<!DOCTYPE html>
                         
                     if (loadedCount === totalCount) {
                         document.getElementById('loading').style.display = 'none';
+                        
+                        // Initialize the region list with the default grouping (lobe)
+                        populateRegionList('lobe');
                     }
                 });
             })
@@ -515,7 +747,7 @@ html_content = """<!DOCTYPE html>
 """
 
 # Write the HTML file
-with open("brain_regions_3d.html", "w") as f:
+with open("web/brain_regions_3d.html", "w") as f:
     f.write(html_content)
 
-print("Created WebGL visualization HTML file: brain_regions_3d.html")
+print("Created WebGL visualization HTML file: web/brain_regions_3d.html")
