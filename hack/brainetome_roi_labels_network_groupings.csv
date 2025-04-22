@@ -1,0 +1,247 @@
+ROI,Anatomical_location,Network,Network_Yeo_7,Network_nina,Network_Yeo_7_nina
+1,"L. sup. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+2,"R. sup. frontal gyrus",Ventral Attention,4,Ventral Attention,4
+3,"L. sup. frontal gyrus",DMN,7,DMN,7
+4,"R. sup. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+5,"L. sup. frontal gyrus",DMN,7,DMN,7
+6,"R. sup. frontal gyrus",DMN,7,DMN,7
+7,"L. sup. frontal gyrus",Dorsal Attention,3,Dorsal Attention,3
+8,"R. sup. frontal gyrus",Dorsal Attention,3,Dorsal Attention,3
+9,"L. sup. frontal gyrus",Somatomotor,2,Somatomotor,2
+10,"R. sup. frontal gyrus",Somatomotor,2,Somatomotor,2
+11,"L. sup. frontal gyrus",DMN,7,DMN,7
+12,"R. sup. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+13,"L. sup. frontal gyrus",DMN,7,DMN,7
+14,"R. sup. frontal gyrus",DMN,7,DMN,7
+15,"L. middle frontal gyrus",Ventral Attention,4,Ventral Attention,4
+16,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+17,"L. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+18,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+19,"L. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+20,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+21,"L. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+22,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+23,"L. middle frontal gyrus",DMN,7,DMN,7
+24,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+25,"L. middle frontal gyrus",Dorsal Attention,3,Dorsal Attention,3
+26,"R. middle frontal gyrus",Dorsal Attention,3,Dorsal Attention,3
+27,"L. middle frontal gyrus",Limbic,5,Limbic,5
+28,"R. middle frontal gyrus",Frontoparietal,6,Frontoparietal,6
+29,"L. inf. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+30,"R. inf. frontal gyrus",Dorsal Attention,3,Dorsal Attention,3
+31,"L. inf. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+32,"R. inf. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+33,"L. inf. frontal gyrus",DMN,7,DMN,7
+34,"R. inf. frontal gyrus",DMN,7,DMN,7
+35,"L. inf. frontal gyrus",DMN,7,DMN,7
+36,"R. inf. frontal gyrus",Frontoparietal,6,Frontoparietal,6
+37,"L. inf. frontal gyrus",Ventral Attention,4,Ventral Attention,4
+38,"R. inf. frontal gyrus",Ventral Attention,4,Ventral Attention,4
+39,"L. inf. frontal gyrus",Ventral Attention,4,Ventral Attention,4
+40,"R. inf. frontal gyrus",Ventral Attention,4,Ventral Attention,4
+41,"L. orbital gyrus",DMN,7,DMN,7
+42,"R. orbital gyrus",DMN,7,DMN,7
+43,"L. orbital gyrus",DMN,7,DMN,7
+44,"R. orbital gyrus",DMN,7,DMN,7
+45,"L. orbital gyrus",Limbic,5,Limbic,5
+46,"R. orbital gyrus",Frontoparietal,6,Frontoparietal,6
+47,"L. orbital gyrus",Limbic,5,Limbic,5
+48,"R. orbital gyrus",Limbic,5,Limbic,5
+49,"L. orbital gyrus",Limbic,5,Limbic,5
+50,"R. orbital gyrus",Limbic,5,Limbic,5
+51,"L. orbital gyrus",DMN,7,DMN,7
+52,"R. orbital gyrus",DMN,7,DMN,7
+53,"L. precentral gyrus",Somatomotor,2,Somatomotor,2
+54,"R. precentral gyrus",Somatomotor,2,Somatomotor,2
+55,"L. precentral gyrus",Dorsal Attention,3,Dorsal Attention,3
+56,"R. precentral gyrus",Dorsal Attention,3,Dorsal Attention,3
+57,"L. precentral gyrus",Somatomotor,2,Somatomotor,2
+58,"R. precentral gyrus",Somatomotor,2,Somatomotor,2
+59,"L. precentral gyrus",Somatomotor,2,Somatomotor,2
+60,"R. precentral gyrus",Somatomotor,2,Somatomotor,2
+61,"L. precentral gyrus",Ventral Attention,4,Ventral Attention,4
+62,"R. precentral gyrus",Ventral Attention,4,Ventral Attention,4
+63,"L. precentral gyrus",Dorsal Attention,3,Dorsal Attention,3
+64,"R. precentral gyrus",Dorsal Attention,3,Dorsal Attention,3
+65,"L. paracentral lobule",Ventral Attention,4,Ventral Attention,4
+66,"R. paracentral lobule",Somatomotor,2,Somatomotor,2
+67,"L. paracentral lobule",Somatomotor,2,Somatomotor,2
+68,"R. paracentral lobule",Somatomotor,2,Somatomotor,2
+69,"L. sup. temporal gyrus",Limbic,5,Limbic,5
+70,"R. sup. temporal gyrus",Limbic,5,Limbic,5
+71,"L. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+72,"R. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+73,"L. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+74,"R. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+75,"L. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+76,"R. sup. temporal gyrus",Somatomotor,2,Somatomotor,2
+77,"L. sup. temporal gyrus",Limbic,5,Limbic,5
+78,"R. sup. temporal gyrus",Limbic,5,Limbic,5
+79,"L. sup. temporal gyrus",DMN,7,DMN,7
+80,"R. sup. temporal gyrus",DMN,7,DMN,7
+81,"L. middle temporal gyrus",DMN,7,DMN,7
+82,"R. middle temporal gyrus",Frontoparietal,6,Frontoparietal,6
+83,"L. middle temporal gyrus",DMN,7,DMN,7
+84,"R. middle temporal gyrus",DMN,7,DMN,7
+85,"L. middle temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+86,"R. middle temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+87,"L. middle temporal gyrus, anterior sup. temporal sulcus",DMN,7,DMN,7
+88,"R. middle temporal gyrus, anterior sup. temporal sulcus",DMN,7,DMN,7
+89,"L. inf. temporal gyrus",Limbic,5,Limbic,5
+90,"R. inf. temporal gyrus",Limbic,5,Limbic,5
+91,"L. inf. temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+92,"R. inf. temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+93,"L. inf. temporal gyrus",Limbic,5,Limbic,5
+94,"R. inf. temporal gyrus",Limbic,5,Limbic,5
+95,"L. inf. temporal gyrus",DMN,7,DMN,7
+96,"R. inf. temporal gyrus",Limbic,5,Limbic,5
+97,"L. inf. temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+98,"R. inf. temporal gyrus",Dorsal Attention,3,Dorsal Attention,3
+99,"L. inf. temporal gyrus",Frontoparietal,6,Frontoparietal,6
+100,"R. inf. temporal gyrus",Frontoparietal,6,Frontoparietal,6
+101,"L. inf. temporal gyrus",Limbic,5,Limbic,5
+102,"R. inf. temporal gyrus",Limbic,5,Limbic,5
+103,"L. fusiform gyrus",Limbic,5,Limbic,5
+104,"R. fusiform gyrus",Limbic,5,Limbic,5
+105,"L. fusiform gyrus",Visual,1,Visual,1
+106,"R. fusiform gyrus",Visual,1,Visual,1
+107,"L. fusiform gyrus",Dorsal Attention,3,Dorsal Attention,3
+108,"R. fusiform gyrus",Visual,1,Visual,1
+109,"L. parahippocampal gyrus",Limbic,5,Limbic,5
+110,"R. parahippocampal gyrus",Limbic,5,Limbic,5
+111,"L. parahippocampal gyrus",Limbic,5,Limbic,5
+112,"R. parahippocampal gyrus",Visual,1,Visual,1
+113,"L. parahippocampal gyrus",Visual,1,Visual,1
+114,"R. parahippocampal gyrus",Visual,1,Visual,1
+115,"L. parahippocampal gyrus, entorhinal cortex",Limbic,5,Limbic,5
+116,"R. parahippocampal gyrus, entorhinal cortex",Limbic,5,Limbic,5
+117,"L. parahippocampal gyrus",Limbic,5,Limbic,5
+118,"R. parahippocampal gyrus",Limbic,5,Limbic,5
+119,"L. parahippocampal gyrus",Visual,1,Visual,1
+120,"R. parahippocampal gyrus",Visual,1,Visual,1
+121,"L. posterior sup. temporal sulcus",DMN,7,DMN,7
+122,"R. posterior sup. temporal sulcus",DMN,7,DMN,7
+123,"L. posterior sup. temporal sulcus",Ventral Attention,4,Ventral Attention,4
+124,"R. posterior sup. temporal sulcus",Ventral Attention,4,Ventral Attention,4
+125,"L. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+126,"R. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+127,"L. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+128,"R. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+129,"L. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+130,"R. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+131,"L. sup. parietal lobule",Somatomotor,2,Somatomotor,2
+132,"R. sup. parietal lobule",Somatomotor,2,Somatomotor,2
+133,"L. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+134,"R. sup. parietal lobule",Dorsal Attention,3,Dorsal Attention,3
+135,"L. inf. pareital lobule",Visual,1,Visual,1
+136,"R. inf. pareital lobule",Visual,1,Visual,1
+137,"L. inf. pareital lobule",Frontoparietal,6,Frontoparietal,6
+138,"R. inf. pareital lobule",Frontoparietal,6,Frontoparietal,6
+139,"L. inf. pareital lobule",Dorsal Attention,3,Dorsal Attention,3
+140,"R. inf. pareital lobule",Dorsal Attention,3,Dorsal Attention,3
+141,"L. inf. pareital lobule",DMN,7,DMN,7
+142,"R. inf. pareital lobule",Frontoparietal,6,Frontoparietal,6
+143,"L. inf. pareital lobule",Dorsal Attention,3,Dorsal Attention,3
+144,"R. inf. pareital lobule",DMN,7,DMN,7
+145,"L. inf. pareital lobule",Somatomotor,2,Somatomotor,2
+146,"R. inf. pareital lobule",Somatomotor,2,Somatomotor,2
+147,"L. precuneus",Frontoparietal,6,Frontoparietal,6
+148,"R. precuneus",Frontoparietal,6,Frontoparietal,6
+149,"L. precuneus",Somatomotor,2,Somatomotor,2
+150,"R. precuneus",Dorsal Attention,3,Dorsal Attention,3
+151,"L. precuneus, dorsomedial parietooccipital  sulcus",Visual,1,Visual,1
+152,"R. precuneus, dorsomedial parietooccipital  sulcus",Visual,1,Visual,1
+153,"L. precuneus",DMN,7,DMN,7
+154,"R. precuneus",DMN,7,DMN,7
+155,"L. postcental gyrus",Somatomotor,2,Somatomotor,2
+156,"R. postcental gyrus",Somatomotor,2,Somatomotor,2
+157,"L. postcental gyrus",Somatomotor,2,Somatomotor,2
+158,"R. postcental gyrus",Somatomotor,2,Somatomotor,2
+159,"L. postcental gyrus",Dorsal Attention,3,Dorsal Attention,3
+160,"R. postcental gyrus",Somatomotor,2,Somatomotor,2
+161,"L. postcental gyrus",Somatomotor,2,Somatomotor,2
+162,"R. postcental gyrus",Somatomotor,2,Somatomotor,2
+163,"L. insular gyrus",Somatomotor,2,Somatomotor,2
+164,"R. insular gyrus",Somatomotor,2,Somatomotor,2
+165,"L. insular gyrus", ,0,Frontoparietal,6
+166,"R. insular gyrus",Frontoparietal,6,Frontoparietal,6
+167,"L. insular gyrus",Ventral Attention,4,Ventral Attention,4
+168,"R. insular gyrus",Ventral Attention,4,Ventral Attention,4
+169,"L. insular gyrus",Ventral Attention,4,Ventral Attention,4
+170,"R. insular gyrus",Ventral Attention,4,Ventral Attention,4
+171,"L. insular gyrus",Somatomotor,2,Somatomotor,2
+172,"R. insular gyrus",Somatomotor,2,Somatomotor,2
+173,"L. insular gyrus",Ventral Attention,4,Ventral Attention,4
+174,"R. insular gyrus",Ventral Attention,4,Ventral Attention,4
+175,"L. cingulate gyrus",DMN,7,DMN,7
+176,"R. cingulate gyrus",DMN,7,DMN,7
+177,"L. cingulate gyrus", ,0,Frontoparietal,6
+178,"R. cingulate gyrus", ,0,Frontoparietal,6
+179,"L. cingulate gyrus",DMN,7,DMN,7
+180,"R. cingulate gyrus",Ventral Attention,4,Ventral Attention,4
+181,"L. cingulate gyrus",DMN,7,DMN,7
+182,"R. cingulate gyrus",Visual,1,Visual,1
+183,"L. cingulate gyrus",Ventral Attention,4,Ventral Attention,4
+184,"R. cingulate gyrus",Ventral Attention,4,Ventral Attention,4
+185,"L. cingulate gyrus",Ventral Attention,4,Ventral Attention,4
+186,"R. cingulate gyrus",Ventral Attention,4,Ventral Attention,4
+187,"L. cingulate gyrus",DMN,7,DMN,7
+188,"R. cingulate gyrus",DMN,7,DMN,7
+189,"L. medioventral occipital cortex",Visual,1,Visual,1
+190,"R. medioventral occipital cortex",Visual,1,Visual,1
+191,"L. medioventral occipital cortex",Visual,1,Visual,1
+192,"R. medioventral occipital cortex",Visual,1,Visual,1
+193,"L. medioventral occipital cortex",Visual,1,Visual,1
+194,"R. medioventral occipital cortex",Visual,1,Visual,1
+195,"L. medioventral occipital cortex",Visual,1,Visual,1
+196,"R. medioventral occipital cortex",Visual,1,Visual,1
+197,"L. medioventral occipital cortex, vmparieto-ocipital sulcus",Visual,1,Visual,1
+198,"R. medioventral occipital cortex, vmparieto-ocipital sulcus",Visual,1,Visual,1
+199,"L. lateral occipital cortex, middle occipital gyrus",Visual,1,Visual,1
+200,"R. lateral occipital cortex, middle occipital gyrus",Visual,1,Visual,1
+201,"L. lateral occipital cortex",Dorsal Attention,3,Dorsal Attention,3
+202,"R. lateral occipital cortex",Visual,1,Visual,1
+203,"L. lateral occipital cortex",Visual,1,Visual,1
+204,"R. lateral occipital cortex",Visual,1,Visual,1
+205,"L. lateral occipital cortex",Visual,1,Visual,1
+206,"R. lateral occipital cortex",Visual,1,Visual,1
+207,"L. lateral occipital cortex",Visual,1,Visual,1
+208,"R. lateral occipital cortex",Visual,1,Visual,1
+209,"L. lateral occipital cortex",Visual,1,Visual,1
+210,"R. lateral occipital cortex",Visual,1,Visual,1
+211,"L. amygdala, medial amygdala", ,0,AMY,8
+212,"R. amygdala, medial amygdala", ,0,AMY,8
+213,"L. amygdala, lateral amygdala", ,0,AMY,8
+214,"R. amygdala, lateral amydala", ,0,AMY,8
+215,"L. hippocampus, rostral hipp.", ,0,HPC,9
+216,"R. hippocampus, rostral hipp.", ,0,HPC,9
+217,"L. hippocampus, caudal hipp.", ,0,HPC,9
+218,"R. hippocampus, caudal hipp.", ,0,HPC,9
+219,"L. basal ganglia, ventral caudate", ,0,BG,10
+220,"R. basal ganglia, ventral caudate", ,0,BG,10
+221,"L. basal ganglia, globus pallidus", ,0,BG,10
+222,"R. basal ganglia, globus pallidus", ,0,BG,10
+223,"L. basal ganglia, nucleus accumbens", ,0,BG,10
+224,"R. basal ganglia, nucleus accumbens", ,0,BG,10
+225,"L. basal ganglia, vmputamen", ,0,BG,10
+226,"R. basal ganglia, vmputamen", ,0,BG,10
+227,"L. basal ganglia, dorsal caudate", ,0,BG,10
+228,"R. basal ganglia, dorsal caudate", ,0,BG,10
+229,"L. basal ganglia, dlputamen", ,0,BG,10
+230,"R. basal ganglia, dlputamen", ,0,BG,10
+231,"L. medial pre-frontal thalamus", ,0,THA,11
+232,"R. medial pre-frontal thalamus", ,0,THA,11
+233,"L. pre-motor thalamus", ,0,THA,11
+234,"R. pre-motor thalamus", ,0,THA,11
+235,"L. sensory thalamus", ,0,THA,11
+236,"R. sensory thalamus", ,0,THA,11
+237,"L. rostral temporal thalamus", ,0,THA,11
+238,"R. rostral temporal thalamus", ,0,THA,11
+239,"L. posterior parietal thalamus", ,0,THA,11
+240,"R. posterior parietal thalamus", ,0,THA,11
+241,"L. occipital thalamus", ,0,THA,11
+242,"R. occipital thalamus", ,0,THA,11
+243,"L. caudal temporal thalamus", ,0,THA,11
+244,"R. caudal temporal thalamus", ,0,THA,11
+245,"L. lateral pre-frontal thalamus", ,0,THA,11
+246,"R. lateral pre-frontal thalamus", ,0,THA,11
