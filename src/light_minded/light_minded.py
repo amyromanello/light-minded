@@ -1,7 +1,7 @@
 """Main module."""
 from neuroquery import fetch_neuroquery_model, NeuroQueryModel
 from nilearn.plotting import view_img
-from nilearn.image import threshold_img
+from nilearn.image import threshold_img, resample_to_img, load_img
 import nibabel as nib
 from pathlib import Path
 
@@ -52,6 +52,28 @@ def query_save_result(result):
         nib.save(brain_map_thresh, output_path)
 
     print(f"Saved thresholded brain map to {output_path}")
+
+
+############################################################################
+# manipulate output images
+
+def img_mod(z_map):
+    print("Resampling z-map to atlas resolution...")
+    #TODO: fix paths, relative paths wrong while debugging
+    atlas = nib.load("/Users/amyroma/Documents/light-minded/light_minded/atlases/mni/bna/BN_Atlas_246_1mm.nii.gz")
+    z_map_resamp = resample_to_img(z_map, atlas)
+    nib.save(z_map_resamp, "/Users/amyroma/Documents/light-minded/light_minded/hack/test_outputs/z_map_resamp.nii.gz")
+
+    print("Thresholding z-map...")
+
+
+    print("Applying atlas: BN_Atlas_246_1mm")
+
+
+
+
+
+
 
 
 
