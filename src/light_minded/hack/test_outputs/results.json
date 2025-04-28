@@ -1,0 +1,347 @@
+[
+  {
+    "query": "I'm sad",
+    "timestamp": "2025-04-28T23:33:56.867283",
+    "similar_words": {
+      "similarity": {
+        "precuneus": 0.0036748662298197797,
+        "amygdala": 0.0010065237531011438,
+        "face": 0.0011550416417655724,
+        "thalamus": 0.000738486128770941,
+        "parahippocampal": 0.0008050082477990967,
+        "temporal": 0.0006616494647799262,
+        "somatization": 0.000644922827979872,
+        "inferior": 0.0006092605698151224,
+        "pcc": 0.0007132077889151905,
+        "cerebellum": 0.00010721740385623701,
+        "task": 0.0005145230529985933,
+        "putamen": 0.0002775702793822801,
+        "insula": 6.162572454285683e-05,
+        "right": 0.0005090972611860472,
+        "stg": 0.00018594904735363274
+      },
+      "weight_in_brain_map": {
+        "precuneus": 1.3942303188098797,
+        "amygdala": 0.48222725638745856,
+        "face": 0.40353791496691893,
+        "thalamus": 0.3758899353541878,
+        "parahippocampal": 0.2417014908135883,
+        "temporal": 0.2266840385031793,
+        "somatization": 0.09862014124406679,
+        "inferior": 0.08569711582538946,
+        "pcc": 0.07176303497565342,
+        "cerebellum": 0.0637863192243966,
+        "task": 0.054656117310029416,
+        "putamen": 0.05170712121581197,
+        "insula": 0.04028021199905368,
+        "right": 0.034347615950209534,
+        "stg": 0.03009408961289403
+      },
+      "weight_in_query": {
+        "precuneus": 0.0,
+        "amygdala": 0.0,
+        "face": 0.0,
+        "thalamus": 0.0,
+        "parahippocampal": 0.0,
+        "temporal": 0.0,
+        "somatization": 0.0,
+        "inferior": 0.0,
+        "pcc": 0.0,
+        "cerebellum": 0.0,
+        "task": 0.0,
+        "putamen": 0.0,
+        "insula": 0.0,
+        "right": 0.0,
+        "stg": 0.0
+      },
+      "n_documents": {
+        "precuneus": 5186,
+        "amygdala": 4540,
+        "face": 4405,
+        "thalamus": 4891,
+        "parahippocampal": 3512,
+        "temporal": 11897,
+        "somatization": 52,
+        "inferior": 10215,
+        "pcc": 1595,
+        "cerebellum": 5578,
+        "task": 12194,
+        "putamen": 3208,
+        "insula": 7050,
+        "right": 13076,
+        "stg": 1459
+      }
+    },
+    "similar_documents": {
+      "pmid": {
+        "0": 17949689,
+        "1": 28325901,
+        "2": 20888872,
+        "3": 16713587,
+        "4": 15862220
+      },
+      "title": {
+        "0": "Pattern Classification of Sad Facial Processing: Toward the Development of Neurobiological Markers in Depression",
+        "1": "Correlates of Social Exclusion in Social Anxiety Disorder: An fMRI study",
+        "2": "fMRI of patients with social anxiety disorder during a social situation task",
+        "3": "Mood Alters Amygdala Activation to Sad Distractors During an Attentional Task",
+        "4": "Same or different? Neural correlates of happy and sad mood in healthy males"
+      },
+      "pubmed_url": {
+        "0": "https://www.ncbi.nlm.nih.gov/pubmed/17949689",
+        "1": "https://www.ncbi.nlm.nih.gov/pubmed/28325901",
+        "2": "https://www.ncbi.nlm.nih.gov/pubmed/20888872",
+        "3": "https://www.ncbi.nlm.nih.gov/pubmed/16713587",
+        "4": "https://www.ncbi.nlm.nih.gov/pubmed/15862220"
+      },
+      "similarity": {
+        "0": 0.6882414264249186,
+        "1": 0.6326562180300366,
+        "2": 0.6087200684741327,
+        "3": 0.5919182565495785,
+        "4": 0.5901239288976428
+      }
+    },
+    "threshold_settings": {
+      "z_score": 3.1,
+      "cluster_threshold": 0
+    },
+    "output_files": {
+      "query_0_brain_map.nii.gz": "hack/test_outputs/query_0_brain_map.nii.gz",
+      "query_0_z_map.nii.gz": "hack/test_outputs/query_0_z_map.nii.gz",
+      "query_0_z_map_resamp.nii.gz": "hack/test_outputs/query_0_z_map_resamp.nii.gz",
+      "query_0_z_map_thresh.nii.gz": "hack/test_outputs/query_0_z_map_thresh.nii.gz",
+      "query_0_roi_data.json": "hack/test_outputs/query_0_roi_data.json"
+    }
+  },
+  {
+    "query": "I'm happy",
+    "timestamp": "2025-04-28T23:34:29.493950",
+    "similar_words": {
+      "similarity": {
+        "face": 0.022480697442074125,
+        "amygdala": 0.012963948009683868,
+        "precuneus": 0.001957122149015836,
+        "ffa": 0.0022615565266199482,
+        "fusiform": 0.00077026773172011,
+        "insula": 0.0005088441401063967,
+        "sts": 0.0022892481655088968,
+        "occipital": 0.0005345152798111424,
+        "thalamus": 0.00047048955635577833,
+        "fusiform gyrus": 0.0009019741499072401,
+        "cingulate": 0.0004890015961015649,
+        "prefrontal": 0.0006414929721459255,
+        "parahippocampal": 0.0005961947936016796,
+        "temporal": 0.0005204750469438365,
+        "task": 0.0012241029460517386
+      },
+      "weight_in_brain_map": {
+        "face": 7.8541010512051805,
+        "amygdala": 6.211049725749787,
+        "precuneus": 0.7425247252894003,
+        "ffa": 0.49641817972112323,
+        "fusiform": 0.3971789839309219,
+        "insula": 0.33259405856896507,
+        "sts": 0.26673588794887493,
+        "occipital": 0.24128686569805788,
+        "thalamus": 0.23947950006553062,
+        "fusiform gyrus": 0.23073917998620402,
+        "cingulate": 0.22306987928433006,
+        "prefrontal": 0.1991791630686337,
+        "parahippocampal": 0.17900583108657586,
+        "temporal": 0.1783170573871825,
+        "task": 0.13003249092347152
+      },
+      "weight_in_query": {
+        "face": 0.0,
+        "amygdala": 0.0,
+        "precuneus": 0.0,
+        "ffa": 0.0,
+        "fusiform": 0.0,
+        "insula": 0.0,
+        "sts": 0.0,
+        "occipital": 0.0,
+        "thalamus": 0.0,
+        "fusiform gyrus": 0.0,
+        "cingulate": 0.0,
+        "prefrontal": 0.0,
+        "parahippocampal": 0.0,
+        "temporal": 0.0,
+        "task": 0.0
+      },
+      "n_documents": {
+        "face": 4405,
+        "amygdala": 4540,
+        "precuneus": 5186,
+        "ffa": 407,
+        "fusiform": 4278,
+        "insula": 7050,
+        "sts": 1158,
+        "occipital": 6796,
+        "thalamus": 4891,
+        "fusiform gyrus": 3445,
+        "cingulate": 9501,
+        "prefrontal": 10017,
+        "parahippocampal": 3512,
+        "temporal": 11897,
+        "task": 12194
+      }
+    },
+    "similar_documents": {
+      "pmid": {
+        "0": 16860973,
+        "1": 24454814,
+        "2": 15862220,
+        "3": 28806742,
+        "4": 21073970
+      },
+      "title": {
+        "0": "Recognition of happy facial affect in panic disorder: An fMRI study",
+        "1": "Regional Homogeneity of Intrinsic Brain Activity in Happy and Unhappy Individuals",
+        "2": "Same or different? Neural correlates of happy and sad mood in healthy males",
+        "3": "Dissociating maternal responses to sad and happy facial expressions of their own child: An fMRI study",
+        "4": "Congruence of happy and sad emotion in music and faces modifies cortical audiovisual activation"
+      },
+      "pubmed_url": {
+        "0": "https://www.ncbi.nlm.nih.gov/pubmed/16860973",
+        "1": "https://www.ncbi.nlm.nih.gov/pubmed/24454814",
+        "2": "https://www.ncbi.nlm.nih.gov/pubmed/15862220",
+        "3": "https://www.ncbi.nlm.nih.gov/pubmed/28806742",
+        "4": "https://www.ncbi.nlm.nih.gov/pubmed/21073970"
+      },
+      "similarity": {
+        "0": 0.6199097905896929,
+        "1": 0.5773342107049354,
+        "2": 0.5681238200087299,
+        "3": 0.5185162625370411,
+        "4": 0.48600202763640477
+      }
+    },
+    "threshold_settings": {
+      "z_score": 3.1,
+      "cluster_threshold": 0
+    },
+    "output_files": {
+      "query_1_brain_map.nii.gz": "hack/test_outputs/query_1_brain_map.nii.gz",
+      "query_1_z_map.nii.gz": "hack/test_outputs/query_1_z_map.nii.gz",
+      "query_1_z_map_resamp.nii.gz": "hack/test_outputs/query_1_z_map_resamp.nii.gz",
+      "query_1_z_map_thresh.nii.gz": "hack/test_outputs/query_1_z_map_thresh.nii.gz",
+      "query_1_roi_data.json": "hack/test_outputs/query_1_roi_data.json"
+    }
+  },
+  {
+    "query": "Angry and frustrated",
+    "timestamp": "2025-04-28T23:34:45.923455",
+    "similar_words": {
+      "similarity": {
+        "face": 0.05313988127036305,
+        "amygdala": 0.03108447885060852,
+        "voice": 0.00846477851920303,
+        "ffa": 0.00634184418977616,
+        "fusiform": 0.0013049408810091717,
+        "occipital": 0.001205519451160997,
+        "insula": 0.0006474493328624281,
+        "sts": 0.0033626831429196605,
+        "prefrontal": 0.0008505645015160979,
+        "cingulate": 0.0005525761688231907,
+        "fusiform gyrus": 0.0008101940623444682,
+        "superior": 0.0011319728509415299,
+        "right": 0.0021039676135495428,
+        "task": 0.0012963329182588774,
+        "left": 0.0006878439848816919
+      },
+      "weight_in_brain_map": {
+        "face": 18.56552708926853,
+        "amygdala": 14.892627129939806,
+        "voice": 1.4579617448793876,
+        "ffa": 1.3920530889709286,
+        "fusiform": 0.6728765491080915,
+        "occipital": 0.5441865198155863,
+        "insula": 0.4231900976386556,
+        "sts": 0.3918091046358876,
+        "prefrontal": 0.2640944373578077,
+        "cingulate": 0.25207095489558523,
+        "fusiform gyrus": 0.20726038944051725,
+        "superior": 0.16619595136042298,
+        "right": 0.14194983369880906,
+        "task": 0.13770524690835123,
+        "left": 0.11293104955759195
+      },
+      "weight_in_query": {
+        "face": 0.0,
+        "amygdala": 0.0,
+        "voice": 0.0,
+        "ffa": 0.0,
+        "fusiform": 0.0,
+        "occipital": 0.0,
+        "insula": 0.0,
+        "sts": 0.0,
+        "prefrontal": 0.0,
+        "cingulate": 0.0,
+        "fusiform gyrus": 0.0,
+        "superior": 0.0,
+        "right": 0.0,
+        "task": 0.0,
+        "left": 0.0
+      },
+      "n_documents": {
+        "face": 4405,
+        "amygdala": 4540,
+        "voice": 780,
+        "ffa": 407,
+        "fusiform": 4278,
+        "occipital": 6796,
+        "insula": 7050,
+        "sts": 1158,
+        "prefrontal": 10017,
+        "cingulate": 9501,
+        "fusiform gyrus": 3445,
+        "superior": 9978,
+        "right": 13076,
+        "task": 12194,
+        "left": 12782
+      }
+    },
+    "similar_documents": {
+      "pmid": {
+        "0": 18958158,
+        "1": 20460301,
+        "2": 25502775,
+        "3": 24179849,
+        "4": 27145325
+      },
+      "title": {
+        "0": "Neural Correlates of Enhanced Visual Short-Term Memory for Angry Faces: An fMRI Study",
+        "1": "Stop looking angry and smile, please: start and stop of the very same facial expression differentially activate threat- and reward-related brain networks",
+        "2": "Influence of Repressive Coping Style on Cortical Activation during Encoding of Angry Faces",
+        "3": "Dissociative part-dependent biopsychosocial reactions to backward masked angry and neutral faces: An fMRI study of dissociative identity disorder",
+        "4": "Amygdala hyperactivation to angry faces in intermittent explosive disorder"
+      },
+      "pubmed_url": {
+        "0": "https://www.ncbi.nlm.nih.gov/pubmed/18958158",
+        "1": "https://www.ncbi.nlm.nih.gov/pubmed/20460301",
+        "2": "https://www.ncbi.nlm.nih.gov/pubmed/25502775",
+        "3": "https://www.ncbi.nlm.nih.gov/pubmed/24179849",
+        "4": "https://www.ncbi.nlm.nih.gov/pubmed/27145325"
+      },
+      "similarity": {
+        "0": 0.7157212984398399,
+        "1": 0.5505840010505206,
+        "2": 0.5131402440405817,
+        "3": 0.4645424956933177,
+        "4": 0.4574185230230485
+      }
+    },
+    "threshold_settings": {
+      "z_score": 3.1,
+      "cluster_threshold": 0
+    },
+    "output_files": {
+      "query_2_brain_map.nii.gz": "hack/test_outputs/query_2_brain_map.nii.gz",
+      "query_2_z_map.nii.gz": "hack/test_outputs/query_2_z_map.nii.gz",
+      "query_2_z_map_resamp.nii.gz": "hack/test_outputs/query_2_z_map_resamp.nii.gz",
+      "query_2_z_map_thresh.nii.gz": "hack/test_outputs/query_2_z_map_thresh.nii.gz",
+      "query_2_roi_data.json": "hack/test_outputs/query_2_roi_data.json"
+    }
+  }
+]
