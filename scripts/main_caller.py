@@ -1,7 +1,5 @@
 import sys
-#from modules import setup, launch
 from src.light_minded import config, launch
-
 
 def main():
     if len(sys.argv) < 2:
